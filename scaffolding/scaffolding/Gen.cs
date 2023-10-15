@@ -8,10 +8,11 @@ namespace scaffolding
 {
     public class Gen
     {
-        const string rootFolder = "C:\\Dev\\azure-git\\HeavyweightScheduler";
-        string entityName = "customer product";
+       const string rootFolder = "C:\\Dev\\azure-git\\HeavyweightScheduler";
+       string entityName = "customer product";
       public static  void Start(string rootFolder, string entityName)
         {
+            rootFolder = Directory.GetCurrentDirectory();
 
             var _entityNamePascal = "";
            var arr = entityName.Split(' ');
